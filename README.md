@@ -1,6 +1,8 @@
 # Mobile Depth From Focus (mDFF) Dataset and Toolbox
 
-# Dataset License
+## Dataset
+
+### License
 All data in the mDFF dataset is licensed under a [Creative Commons 4.0 Attribution License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
 ## Citation
