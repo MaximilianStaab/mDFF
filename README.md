@@ -1,6 +1,16 @@
 # Mobile Depth From Focus (mDFF) Dataset and Toolbox
 
+We share the mDFF dataset and its toolbox in this repository. Dataset is preprocessed as follows:
+
+- we align and scale/crop the images using the [alignment script](pytohn/align_focal_stacks.py)
+- we project the pointclouds to the 2D image plane given the camera parameters using the [projection script](python/project_pointclouds.py)
+- we generate the train/val and test datasets in .h5 file using the [dataset generation script](python/pack_to_h5.py)
+
 ## Dataset
+Cropped (224x224) and clipped (0.1 to 4meters) hdf5 dataset can be downloaded [here](https://vision.in.tum.de/webarchive/hazirbas/mDFF/mDFF-dataset_cropped_clipped.h5). It contains train, val and test files.
+
+Original focalstacks (/focalstacks), preprocessed focalstacks (/test, /train), registered depth maps and raw pointclouds can be downloaded [here](https://vision.in.tum.de/webarchive/hazirbas/mDFF/mDFFDataset.tar.gz). 
+
 
 ### License
 All data in the mDFF dataset is licensed under a [Creative Commons 4.0 Attribution License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
